@@ -41,7 +41,8 @@ python3 -m http.server 8000
 
 1. Go to **Settings → Pages** in this repository.
 2. Under **Build and deployment**, choose **Deploy from a branch**, branch `main`, folder `/ (root)`, and save.
-3. After a minute the site is live at `https://mpasupula.github.io/mywebsite/`.
+3. After a minute the site is live. If the repository is named `mpasupula.github.io` it is served at
+   `https://mpasupula.github.io/`; under any other name it is served at `https://mpasupula.github.io/<repo-name>/`.
 
 ## Moving to a custom domain
 
