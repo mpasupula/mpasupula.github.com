@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="MP">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f6e78"/>
+      <stop offset="1" stop-color="#1f3b57"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" fill="url(#g)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="2">
+    <path d="M0 230c40-20 80-20 120 0s80 20 120 0 60-15 80-10"/>
+    <path d="M0 255c40-20 80-20 120 0s80 20 120 0 60-15 80-10"/>
+    <path d="M0 280c40-20 80-20 120 0s80 20 120 0 60-15 80-10"/>
+  </g>
+  <text x="160" y="185" text-anchor="middle" font-family="Georgia, serif" font-size="112" font-weight="600" fill="#ffffff">MP</text>
+</svg>
