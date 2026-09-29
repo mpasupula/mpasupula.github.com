@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | Manideep Pasupula</title>
+  <style>
+    :root { --bg: #fbfbf9; --text: #1c2227; --muted: #5a6570; --accent: #0f6e78; --on-accent: #fff; color-scheme: light dark; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #11161a; --text: #e6eaed; --muted: #9aa6b0; --accent: #5cc2cc; --on-accent: #0b1a1c; } }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 16px; box-sizing: border-box;
+      background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, sans-serif; text-align: center; }
+    h1 { font-family: Georgia, serif; font-size: 2rem; margin: 0 0 .4em; }
+    p { color: var(--muted); }
+    a { display: inline-block; margin-top: 12px; padding: 11px 20px; border-radius: 999px; background: var(--accent);
+      color: var(--on-accent); font-weight: 600; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Page not found</h1>
+    <p>The page you are looking for does not exist or has moved.</p>
+    <a id="home" href="/">Back to the homepage</a>
+  </main>
+  <script>
+    // On github.io the site lives under /mywebsite/; on a custom domain it is at the root.
+    if (location.hostname.endsWith('github.io')) document.getElementById('home').href = '/mywebsite/';
+  </script>
+</body>
+</html>
