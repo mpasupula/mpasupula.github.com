@@ -120,7 +120,7 @@ p { margin: 0 0 1em; }
 .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .nav-toggle { display: flex; }
   .nav-links {
     position: absolute; top: 64px; left: 0; right: 0;
@@ -177,7 +177,7 @@ p { margin: 0 0 1em; }
 .section-intro { color: var(--muted); margin-bottom: 36px; }
 @media (max-width: 640px) { .section { padding: 64px 0; } }
 
-.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 32px 0 0; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 32px 0 0; }
 .facts div { padding: 16px 18px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
 .facts dt { font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 600; }
 .facts dd { margin: 4px 0 0; font-weight: 500; }
@@ -239,3 +239,8 @@ p { margin: 0 0 1em; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .card { transition: none; }
 }
+
+/* ---------- Project meta & skills ---------- */
+.card-meta { font-size: .78rem !important; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--accent) !important; margin: 0 0 8px !important; }
+.skills { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; }
+.skills li { padding: 5px 12px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); font-size: .88rem; }
