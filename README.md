@@ -16,7 +16,7 @@ so it can be served directly by GitHub Pages or any static host.
 │   ├── css/style.css     # styles, light and dark themes
 │   ├── js/main.js        # menu, theme toggle, scroll effects, hero flow animation
 │   └── img/
-│       ├── avatar.svg    # placeholder portrait (replace with a photo)
+│       ├── portrait.jpg  # profile photo (640×640)
 │       └── favicon.svg
 └── .nojekyll             # tells GitHub Pages to serve files as-is
 ```
@@ -25,7 +25,7 @@ so it can be served directly by GitHub Pages or any static host.
 
 Everything lives in `index.html`, one `<section>` per part of the page.
 
-- **Photo:** add e.g. `assets/img/portrait.jpg` and change the `src` of the hero `<img>`.
+- **Photo:** replace `assets/img/portrait.jpg` with another square image.
 - **Publications:** copy an `<li class="pub">` block inside the right `<ol class="pubs">`.
 - **CV:** put `cv.pdf` in `assets/` and uncomment the CV link in the Experience section.
 - **Profiles:** add LinkedIn, ORCID, ResearchGate etc. as extra `<li>` items in the `.social` list.
@@ -41,7 +41,8 @@ python3 -m http.server 8000
 
 1. Go to **Settings → Pages** in this repository.
 2. Under **Build and deployment**, choose **Deploy from a branch**, branch `main`, folder `/ (root)`, and save.
-3. After a minute the site is live at `https://mpasupula.github.io/mywebsite/`.
+3. After a minute the site is live. If the repository is named `mpasupula.github.io` it is served at
+   `https://mpasupula.github.io/`; under any other name it is served at `https://mpasupula.github.io/<repo-name>/`.
 
 ## Moving to a custom domain
 
