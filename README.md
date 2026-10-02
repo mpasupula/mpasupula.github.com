@@ -10,11 +10,11 @@ so it can be served directly by GitHub Pages or any static host.
 
 ```
 .
-├── index.html            # the whole site: hero, about, research, publications, experience, contact
+├── index.html            # the whole site: about (bio, news, selected publications), research, publications, projects, cv, contact
 ├── 404.html              # not-found page
 ├── assets/
 │   ├── css/style.css     # styles, light and dark themes
-│   ├── js/main.js        # menu, theme toggle, scroll effects, hero flow animation
+│   ├── js/main.js        # menu, theme toggle, search (Ctrl+K), BibTeX toggles, project filters, scroll effects, flow animation
 │   └── img/
 │       ├── portrait.jpg  # profile photo (640×640)
 │       └── favicon.svg
@@ -26,8 +26,9 @@ so it can be served directly by GitHub Pages or any static host.
 Everything lives in `index.html`, one `<section>` per part of the page.
 
 - **Photo:** replace `assets/img/portrait.jpg` with another square image.
-- **Publications:** copy an `<li class="pub">` block inside the right `<ol class="pubs">`.
-- **CV:** put `cv.pdf` in `assets/` and uncomment the CV link in the Experience section.
+- **Publications:** copy an `<li class="pub">` block under the right year heading. Entries with `data-selected` also appear under "selected publications" on the about part.
+- **News:** add a `<tr>` at the top of the news table.
+- **CV:** put `cv.pdf` in `assets/` and uncomment the CV link in the cv section.
 - **Profiles:** add LinkedIn, ORCID, ResearchGate etc. as extra `<li>` items in the `.social` list.
 
 Preview locally with any static server, for example:
